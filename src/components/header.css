@@ -1,0 +1,35 @@
+.logo {
+  float: left;
+  width: 30%;
+  height: 90%;
+}
+.header {
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+.nav {
+  float: right;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 50px;
+}
+.nav li a {
+  color: #ff6060;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  border-bottom: 3px solid #ff6060;
+}

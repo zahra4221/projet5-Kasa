@@ -1,0 +1,13 @@
+.page-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.content-container {
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
