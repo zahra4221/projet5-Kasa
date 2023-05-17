@@ -1,15 +1,17 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../components/styles.css";
+import Banner from "../components/Banner";
+import Card from "../components/Card";
+import "../sass/styles.scss";
 
 const Home = () => {
   return (
     <div className="page-container">
       <Header />
-      <div className="content-container">
-        {/* Contenu principal de la page */}
-      </div>
+      <Banner />
+      <Card />
+      <div className="content-container"></div>
       <Footer />
     </div>
   );
