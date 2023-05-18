@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import logementsData from "../data/logements.json";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -14,9 +14,8 @@ const AccommodationDetails = () => {
   const accommodation = logementsData.find((item) => item.id === id);
 
   if (!accommodation) {
-    return <div>Logement non trouvé.</div>;
+    return <Navigate to="/error" />;
   }
-
   const renderRatingStars = () => {
     const rating = accommodation.rating;
     const stars = Array.from({ length: 5 }, (_, index) => (
