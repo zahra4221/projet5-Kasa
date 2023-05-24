@@ -28,26 +28,32 @@ const AccommodationDetails = () => {
     <div className="page-container">
       <Header />
       <ImageSlider images={accommodation.pictures} />
-      <div className="title_host">
-        <h2 className="accomodation_title">{accommodation.title}</h2>
-        <div className="host-details">
-          <p className="host_name">
-            {accommodation.host.name}
-            <br />
-            {accommodation.host.lastname}
-          </p>
-          <img src={accommodation.host.picture} alt={accommodation.host.name} />
-        </div>
-      </div>
-      <div className="accommodation-info">
-        <p className="location">{accommodation.location}</p>
+      <div className="details_accomodation">
+        <div className="firstcolumn">
+          <h2 className="accomodation_title">{accommodation.title}</h2>
 
-        <div className="rating_tag">
-          <ul className="accomodation_tag">
-            {accommodation.tags.map((tag, index) => (
-              <li key={index}>{tag}</li>
-            ))}
-          </ul>
+          <p className="location">{accommodation.location}</p>
+
+          <div className="rating_tag">
+            <ul className="accomodation_tag">
+              {accommodation.tags.map((tag, index) => (
+                <li key={index}>{tag}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="secondcolumn">
+          <div className="host-pic">
+            <p className="host_name">
+              {accommodation.host.name}
+              <br />
+              {accommodation.host.lastname}
+            </p>
+            <img
+              src={accommodation.host.picture}
+              alt={accommodation.host.name}
+            />
+          </div>
           <div className="rating-stars">{renderRatingStars()}</div>
         </div>
       </div>

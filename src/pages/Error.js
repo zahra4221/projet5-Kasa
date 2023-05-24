@@ -8,10 +8,12 @@ const ErrorPage = () => {
   return (
     <div className="page-container">
       <Header />
-      <h1>404</h1>
-      <p>La page que vous recherchez n'existe pas.</p>
-      <div className="retour">
-        <Link to="/">Retourner sur la page d’accueil</Link>
+      <div className="error_page">
+        <h1>404</h1>
+        <p> Oups! La page que vous recherchez n'existe pas.</p>
+        <div className="retour">
+          <Link to="/">Retourner sur la page d’accueil</Link>
+        </div>
       </div>
     </div>
   );

@@ -4,6 +4,11 @@
   object-fit: cover;
   border-radius: 25px;
   margin-top: 25px;
+
+  @media (max-width: 768px) {
+    height: 330px;
+    margin-top: 15px;
+  }
 }
 
 .accomodation_title {
@@ -13,8 +18,43 @@
   text-align: left;
   color: #ff6060;
   margin-bottom: 2px;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
 }
 
+.details_accomodation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 76px;
+  margin: 0;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+}
+.firstcolumn {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    grid-column: 1;
+  }
+}
+
+.secondcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
 .location {
   font-family: "Montserrat";
   font-size: 18px;
@@ -22,69 +62,74 @@
   text-align: left;
   color: #ff6060;
   margin-top: 0;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
-.details-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 76px;
-  margin: 0;
-}
-
-.description {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.equipments {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-}
-
-.host-details {
+.host-pic {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: row;
   justify-content: flex-end;
-  margin-top: 10px;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
-  line-height: 26px;
   text-align: right;
   color: #ff6060;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
-.host-details img {
+.host_name {
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.host-pic img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin-left: 10px;
-}
 
-.title_host {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+  }
 
+  @media (max-width: 480px) {
+    width: 40px;
+  }
+}
 .rating-stars {
-  display: flex;
-  align-items: center;
+  margin-top: 20px;
+  @media (max-width: 768px) {
+  }
 }
 
 .rating-stars svg {
   width: 24px;
   height: 24px;
-  margin-right: 15px;
-}
-.rating_tag {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-right: 10px;
+  @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
 }
 
 .accomodation_tag {
@@ -92,7 +137,6 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  align-items: center;
 }
 .accomodation_tag li {
   margin-right: 10px;
@@ -104,4 +148,46 @@
   font-family: "Montserrat";
   font-weight: 500;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 76px;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
+
+  @media (max-width: 480px) {
+    grid-gap: 0px;
+  }
+}
+
+.description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+}
+
+.equipments {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 }

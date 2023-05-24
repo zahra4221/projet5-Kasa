@@ -1,14 +1,35 @@
 .about_marge {
   margin: 0 150px;
+
+  @media (max-width: 992px) {
+    margin: 0 110px;
+  }
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 }
+
 .about_title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 }
+
 .about_content {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 27px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
