@@ -18,6 +18,13 @@ const ImageSlider = ({ images }) => {
     );
   };
 
+  const currentNumber = currentIndex + 1;
+  const totalNumber = images.length;
+
+  if (totalNumber <= 1) {
+    return <img src={images[0]} alt="Slider" className="slider-image" />;
+  }
+
   return (
     <div className="image-slider">
       <img
@@ -33,6 +40,7 @@ const ImageSlider = ({ images }) => {
         className="slider-arrow right"
         onClick={nextSlide}
       />
+      <div className="slider-counter">{`${currentNumber}/${totalNumber}`}</div>
     </div>
   );
 };

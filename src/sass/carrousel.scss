@@ -32,3 +32,18 @@
     width: 11px;
   }
 }
+.slider-counter {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
