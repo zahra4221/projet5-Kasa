@@ -59,12 +59,25 @@ const AccommodationDetails = () => {
       </div>
       <div className="details-container">
         <div className="description">
-          <Collapse title="Description" content={accommodation.description} />
+          <Collapse
+            title="Description"
+            content={
+              <div className="description_content">
+                {accommodation.description}
+              </div>
+            }
+          />
         </div>
         <div className="equipments">
           <Collapse
             title="Équipements"
-            content={accommodation.equipments.join(", ")}
+            content={
+              <ul>
+                {accommodation.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            }
           />
         </div>
       </div>
