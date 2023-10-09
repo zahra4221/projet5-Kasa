@@ -1,3 +1,6 @@
+# Presentation  
+For this project, I used React to build a web application. My main tasks included setting up navigation with React Router, developing reusable React components for the user interface, and managing simulated data from a JSON file to represent housing listings.  
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
